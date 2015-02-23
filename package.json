@@ -1,0 +1,21 @@
+{
+  "name": "CoupAbc123",
+  "version": "1.0.0",
+  "description": "This is a game",
+  "main": "app.js",
+  "dependencies":{
+	"express":"*",
+	"socket.io":"*"
+  },
+  "engines": {
+    "node": "0.10.35"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "node app.js"
+  },  
+  "keywords": [
+  ],
+  "author": "Sajith Perera",
+  "license": "ISC"
+}
