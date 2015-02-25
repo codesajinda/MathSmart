@@ -7,6 +7,7 @@ var score = 0;
 
 function buildFormula()
 {
+	$('#btnStart').hide();
 	num1 = Math.floor((Math.random() * highestNumber) + 1);
 	num2 = Math.floor((Math.random() * num1) + 1);
 	randomOperator = operations[(Math.floor((Math.random() * operations.length) + 1))];
@@ -56,7 +57,6 @@ function shuffle(o){ //v1.0
 };
 function checkAnswer(e){
 	var userSubmittedValue = $('#result').val();
-	$('#btnSubmit').hide();
 	
 	if(isDivision){
 		userSubmittedValue = Math.round(parseFloat(userSubmittedValue) * 100) / 100;
