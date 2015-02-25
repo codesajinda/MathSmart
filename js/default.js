@@ -56,6 +56,7 @@ function shuffle(o){ //v1.0
 };
 function checkAnswer(e){
 	var userSubmittedValue = $('#result').val();
+	$('#btnSubmit').hide();
 	
 	if(isDivision){
 		userSubmittedValue = Math.round(parseFloat(userSubmittedValue) * 100) / 100;
